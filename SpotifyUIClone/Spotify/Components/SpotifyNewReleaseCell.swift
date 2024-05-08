@@ -49,6 +49,7 @@ struct SpotifyNewReleaseCell: View {
                     VStack(alignment: .leading, spacing: 2) {
                         if let title {
                             Text(title)
+                                .fontWeight(.semibold)
                                 .foregroundStyle(.spotifyWhite)
                         }
                         
@@ -77,7 +78,10 @@ struct SpotifyNewReleaseCell: View {
                         
                     }
                 }
+                .padding(.trailing, 16)
             }
+            .themeColors(isSelected: false)
+            .clipShape(RoundedRectangle(cornerRadius: 8))
         }
     }
 }
@@ -87,5 +91,6 @@ struct SpotifyNewReleaseCell: View {
         Color.black.ignoresSafeArea()
         
         SpotifyNewReleaseCell()
+            .padding()
     }
 }
