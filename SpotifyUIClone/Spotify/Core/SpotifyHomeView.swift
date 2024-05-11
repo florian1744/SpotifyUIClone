@@ -22,6 +22,11 @@ struct SpotifyHomeView: View {
                     Section {
                         VStack {
                             recentsSection
+                            
+                            if let product = products.first {
+                                newReleaseSection(product: product)
+                            }
+ 
                         }
                     } header: {
                         header
@@ -96,6 +101,24 @@ struct SpotifyHomeView: View {
                 )
             }
         }
+    }
+    
+    private func newReleaseSection(product: Product) -> some View {
+        SpotifyNewReleaseCell(
+            imageName: product.firstImage,
+            headline: product.brand,
+            subheadline: product.category,
+            title: product.title,
+            subtitle: product.description,
+            onAddToPlaylistPressed: {
+                
+            },
+            onPlayPressed: {
+                
+            }
+            
+        )
+
     }
 }
 
