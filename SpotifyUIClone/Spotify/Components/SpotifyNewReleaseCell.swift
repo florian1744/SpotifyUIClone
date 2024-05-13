@@ -66,7 +66,6 @@ struct SpotifyNewReleaseCell: View {
                             .foregroundStyle(.spotifyLightGray)
                             .font(.title3)
                             .padding(4)
-                            .background(.blue)
                             .onTapGesture {
                                 onAddToPlaylistPressed?()
                             }
