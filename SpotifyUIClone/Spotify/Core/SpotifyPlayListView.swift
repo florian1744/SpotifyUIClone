@@ -10,6 +10,7 @@ import SwiftUI
 struct SpotifyPlayListView: View {
     
     var product: Product = .mock
+    var user: User = .mock
     
     var body: some View {
         ZStack {
@@ -23,6 +24,19 @@ struct SpotifyPlayListView: View {
                         subtitle: product.brand,
                         imageName: product.thumbnail
                     )
+                    
+                    PlaylistDescriptionCell(
+                        descriptionText: product.description,
+                        username: user.firstName,
+                        subheadline: product.category,
+                        onAddToPlaylistPressed: nil,
+                        onDownloadPressed: nil,
+                        onSharedPressed: nil,
+                        onEllipsisIsPressed: nil,
+                        onShufflePressed: nil,
+                        onPlayPressed: nil
+                    )
+                    .padding(.horizontal, 16)
                 }
             }
             .scrollIndicators(.hidden)

@@ -29,42 +29,63 @@ struct PlaylistDescriptionCell: View {
             
             Text(subheadline)
             
-            HStack(spacing: 0) {
-                HStack(spacing: 0) {
-                    Image(systemName: "plus.circle")
-                        .padding(8)
-                        .background(Color.black.opacity(0.001))
-                        .onTapGesture {
-                            
-                        }
-                    Image(systemName: "arrow.down.circle")
-                        .padding(8)
-                        .background(Color.black.opacity(0.001))
-                        .onTapGesture {
-                            
-                        }
-                    Image(systemName: "square.and.arrow.up")
-                        .padding(8)
-                        .background(Color.black.opacity(0.001))
-                        .onTapGesture {
-                            
-                        }
-                    Image(systemName: "ellipsis")
-                        .padding(8)
-                        .background(Color.black.opacity(0.001))
-                        .onTapGesture {
-                            
-                        }
-                }
-                .offset(x: -8)
-            }
-            .font(.title2)
+            buttonsRow
  
         }
         .foregroundStyle(.spotifyLightGray)
         .font(.callout)
         .fontWeight(.medium)
         
+    }
+    
+    private var buttonsRow: some View {
+        HStack(spacing: 0) {
+            HStack(spacing: 0) {
+                Image(systemName: "plus.circle")
+                    .padding(8)
+                    .background(Color.black.opacity(0.001))
+                    .onTapGesture {
+                        
+                    }
+                Image(systemName: "arrow.down.circle")
+                    .padding(8)
+                    .background(Color.black.opacity(0.001))
+                    .onTapGesture {
+                        
+                    }
+                Image(systemName: "square.and.arrow.up")
+                    .padding(8)
+                    .background(Color.black.opacity(0.001))
+                    .onTapGesture {
+                        
+                    }
+                Image(systemName: "ellipsis")
+                    .padding(8)
+                    .background(Color.black.opacity(0.001))
+                    .onTapGesture {
+                        
+                    }
+            }
+            .offset(x: -8)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            
+            HStack(spacing: 8) {
+                Image(systemName: "shuffle")
+                    .font(.system(size: 24))
+                    .background(Color.black.opacity(0.001))
+                    .onTapGesture {
+                        
+                    }
+                Image(systemName: "play.circle.fill")
+                    .font(.system(size: 46))
+                    .background(Color.black.opacity(0.001))
+                    .onTapGesture {
+                        
+                    }
+            }
+            .foregroundStyle(.spotifyGreen)
+        }
+        .font(.title2)
     }
     
     private var madeForYouSection: some View {

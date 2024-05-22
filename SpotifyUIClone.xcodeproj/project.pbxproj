@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172461282BFE803200D7D4C6 /* SongRowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172461272BFE803200D7D4C6 /* SongRowCell.swift */; };
 		173655152BBDCF9D00DDA013 /* SpotifyUICloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173655142BBDCF9D00DDA013 /* SpotifyUICloneApp.swift */; };
 		173655172BBDCF9D00DDA013 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173655162BBDCF9D00DDA013 /* ContentView.swift */; };
 		173655192BBDCF9E00DDA013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 173655182BBDCF9E00DDA013 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		172461272BFE803200D7D4C6 /* SongRowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongRowCell.swift; sourceTree = "<group>"; };
 		173655112BBDCF9D00DDA013 /* SpotifyUIClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyUIClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		173655142BBDCF9D00DDA013 /* SpotifyUICloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyUICloneApp.swift; sourceTree = "<group>"; };
 		173655162BBDCF9D00DDA013 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				17DD50902BF13E5200E95025 /* ImageTitleRowCell.swift */,
 				17AFCC4F2BF2935B00925E1F /* PlaylistHeaderCell.swift */,
 				17AFCC512BF2A1F800925E1F /* PlaylistDescriptionCell.swift */,
+				172461272BFE803200D7D4C6 /* SongRowCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				173655292BBDD2D000DDA013 /* Constants.swift in Sources */,
 				1773B72C2BEAB5BF00CF334F /* SpotifyRecentsCell.swift in Sources */,
 				17E8FFEE2BBEEC1C003B0E3C /* Product.swift in Sources */,
+				172461282BFE803200D7D4C6 /* SongRowCell.swift in Sources */,
 				17AFCC522BF2A1F800925E1F /* PlaylistDescriptionCell.swift in Sources */,
 				17E8FFF02BBEEC36003B0E3C /* User.swift in Sources */,
 			);
